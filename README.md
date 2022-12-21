@@ -1,23 +1,36 @@
-# IOTDevices
-IOT devices list and endpoints
+# IoT Devices Endpoints Viewer
 
-npm install
 
-To start server
+## Setup
+
+```
+> git clone https://github.com/pankajtakawale/iot-webapp
+> chmod +x ./build.sh
+> ./build.sh
+```
+
+### Run Application
+#### To start server
 -------------------------
-at root of IOTDevices
-npm start
 
- server:            http://localhost:3001
- 
- apis:
- Devices -> http://localhost:3001/devices
- Endpoints -> http://localhost:3001/enpoints/{device_type}
+```
+> cd server
+> ./start_server.sh
+```
+It starts server application on port **3000** 
 
-To start client
+#### To start client
 -----------------
-cd client
-npm start
 
+* Open new terminal
+* Go to root of iot-webapp
+
+
+```
+> cd client
+> ./start_client.sh
+```
+
+It starts client react application on port **3000**
  Local:            http://localhost:3000
 
