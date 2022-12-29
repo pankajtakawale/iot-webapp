@@ -32,6 +32,11 @@ const Endpoints = () => {
     { field: 'protocol', headerName: 'Protocol', width: 330 },
     { field: 'ip', headerName: 'ip', width: 330 },
     {
+      field: 'domain_name',
+      headerName: 'domain_name',
+      width: 330
+    },
+    {
       field: 'security_posture',
       headerName: 'security_posture',
       width: 330
@@ -78,16 +83,6 @@ const Endpoints = () => {
       valueFormatter: (params) => {
         return params?.value && params.value.join();
       }
-    },
-    {
-      field: 'domain_name',
-      headerName: 'domain_name',
-      width: 330
-    },
-    {
-      field: 'orig_domain',
-      headerName: 'orig_domain',
-      width: 330
     },
     {
       field: 'city',
