@@ -14,6 +14,9 @@ const Home = () => {
   const endpointsPage = () => {
     navigate("/endpoints");
   };
+  const domainipsPage = () => {
+    navigate("/domainips");
+  };
   return (
     <div>
       <Paper elevation={3}>
@@ -23,6 +26,9 @@ const Home = () => {
           </Button>
           <Button variant="outlined" onClick={() => endpointsPage()}>
             Analytics
+          </Button>
+          <Button variant="outlined" onClick={() => domainipsPage()}>
+            Domain IP Mapping
           </Button>
         </Stack>
       </Paper>
